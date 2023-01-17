@@ -3,24 +3,24 @@ package c.inner;
 public class AnonymousSample {
   public static void main(String[] args) {
     AnonymousSample sample = new AnonymousSample();
-    //sample.setButtonListener();
-    // sample.setButtonListenerAnonymous();
+    sample.setButtonListener();
+    sample.setButtonListenerAnonymous();
     sample.setButtonListenerAnonymousObject();
   }
 
-//  class MagicButtonListener implements EventListener {
-//    public void onClick() {
-//      System.out.println("Magic Button Clicked !!! ");
-//    }
-//  }
+  class MagicButtonListener implements EventListener {
+    public void onClick() {
+      System.out.println("Magic Button Clicked !!! ");
+    }
+  }
 
-//  public void setButtonListener() {
-//    MagicButton button = new MagicButton();
-//    MagicButtonListener listener = new MagicButtonListener();
-//
-//    button.setListener(listener);
-//    button.onClickProcess();
-//  }
+  public void setButtonListener() {
+    MagicButton button = new MagicButton();
+    MagicButtonListener listener = new MagicButtonListener();
+
+    button.setListener(listener);
+    button.onClickProcess();
+  }
 
     public void setButtonListenerAnonymous() {
       MagicButton button = new MagicButton();

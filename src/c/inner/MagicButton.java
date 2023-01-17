@@ -1,5 +1,4 @@
 package c.inner;
-import java.util.EventListener;
 
 public class MagicButton {
   public MagicButton() {
@@ -14,8 +13,9 @@ public class MagicButton {
 
   public void onClickProcess() {
     if(listener != null) {
-      // listener.onClick();
+      listener.onClick();
     }
   }
+
 
 }

@@ -11,10 +11,10 @@ public class throwsException {
     }
   }
 
-  public void throwsException(int number) throws NullPointerException, Exception{
+  public void throwsException(int number) throws Exception {
     if (number > 12) {
       throw new Exception("Number is over than 12");
     }
-    System.out.println("Number is " +number);
+    System.out.println("Number is " + number);
   }
 }

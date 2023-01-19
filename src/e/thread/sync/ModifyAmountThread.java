@@ -1,4 +1,4 @@
-package e.sync;
+package e.thread.sync;
 
 public class ModifyAmountThread extends Thread {
   private CommonCalculate calc;

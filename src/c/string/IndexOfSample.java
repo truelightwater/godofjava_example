@@ -27,9 +27,9 @@ public class IndexOfSample {
 
     System.out.println(text.lastIndexOf('a'));
     System.out.println(text.lastIndexOf("a "));
-    System.out.println(text.indexOf('a', 20));
-    System.out.println(text.indexOf("a ", 20));
-    System.out.println(text.indexOf('z'));
+    System.out.println(text.lastIndexOf('a', 20));
+    System.out.println(text.lastIndexOf("a ", 20));
+    System.out.println(text.lastIndexOf('z'));
 
     System.out.println(text.charAt(61));
   }

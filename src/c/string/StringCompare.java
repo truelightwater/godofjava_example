@@ -11,9 +11,10 @@ public class StringCompare {
   public void checkString() {
     String text = "You must know String class.";
     String text2 = "2023년은 김경수의 해이다.";
-    System.out.println("text.length() = " +text2.length());
+    String text3 = " ";
+    System.out.println("text.length() = " +text3.length());
 
-    System.out.println("text.isEmpty() = " +text.isEmpty());
+    System.out.println("text.isEmpty() = " +text3.isEmpty());
   }
 
   public void checkCompare() {

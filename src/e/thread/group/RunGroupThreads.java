@@ -1,6 +1,5 @@
-package e.group;
-import e.support.SleepThread;
-import e.support.*;
+package e.thread.group;
+import e.thread.support.SleepThread;
 
 public class RunGroupThreads {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package e.object;
+package e.thread.object;
 
 
 public class RunObjectThreads {

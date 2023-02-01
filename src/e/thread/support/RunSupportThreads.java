@@ -1,21 +1,21 @@
-package e.support;
+package e.thread.support;
 
 public class RunSupportThreads {
   public static void main(String[] args) {
     RunSupportThreads sample = new RunSupportThreads();
-    sample.checkThreadState1();
-//    sample.checkJoin();
+    // sample.checkThreadState1();
+    sample.checkJoin();
   }
 
   public void checkThreadState1() {
-    SleepThread thread = new SleepThread(2000);
+    SleepThread thread = new SleepThread(4000);
 
     try {
       System.out.println("Thread State = " +thread.getState());
       thread.start();
       System.out.println("Thread State(after start) = " +thread.getState());
 
-      thread.sleep(1000);
+      thread.sleep(2000);
       System.out.println("Thread State(after 1sec) = " + thread.getState());
 
       thread.join();
@@ -31,7 +31,7 @@ public class RunSupportThreads {
 
     try {
       thread.start();
-      thread.join(2016);
+      thread.join(500);
       thread.interrupt();
       System.out.println("thread state(after join)=" +thread.getState());
     } catch (InterruptedException ie) {

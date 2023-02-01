@@ -1,4 +1,4 @@
-package e.support;
+package e.thread.support;
 
 public class SleepThread extends Thread {
   long sleepTime;

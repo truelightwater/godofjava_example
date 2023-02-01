@@ -8,14 +8,14 @@ public class RunSupportThreads {
   }
 
   public void checkThreadState1() {
-    SleepThread thread = new SleepThread(4000);
+    SleepThread thread = new SleepThread(2000);
 
     try {
       System.out.println("Thread State = " +thread.getState());
       thread.start();
       System.out.println("Thread State(after start) = " +thread.getState());
 
-      thread.sleep(2000);
+      thread.sleep(1000);
       System.out.println("Thread State(after 1sec) = " + thread.getState());
 
       thread.join();
